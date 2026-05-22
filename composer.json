@@ -16,6 +16,7 @@
     "require-dev": {
         "driftingly/rector-laravel": "*",
         "fakerphp/faker": "^1.23",
+        "laravel/boost": "*",
         "laravel/pail": "^1.2.5",
         "laravel/pao": "^1.0.6",
         "laravel/pint": "^1.27",
@@ -39,6 +40,7 @@
     },
     "scripts": {
         "format": [
+            "@php vendor/bin/rector",
             "@php vendor/bin/pint"
         ],
         "setup": [
